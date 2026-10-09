@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siyu Chen — Projects</title>
+  <meta name="description" content="A selection of projects built by Siyu Chen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="brand-dot"></span>Siyu Chen</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Projects</h1>
+        <p>Things I've built while learning. More on the way — this page will grow as I do.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:24px;">
+      <div class="container">
+        <div class="todo-app">
+          <div class="todo-card">
+            <h2 class="todo-title">My To-Do List</h2>
+            <p class="todo-sub">Pick a date, jot down a task, and stay on top of your day.</p>
+            <form class="todo-form" id="todo-form">
+              <div class="todo-form-row">
+                <input type="text" id="todo-input" placeholder="What do you need to do?" autocomplete="off" required />
+                <input type="date" id="todo-date" required />
+                <button type="submit" class="btn btn-primary">Add</button>
+              </div>
+              <div class="todo-pickers">
+                <div class="picker-group">
+                  <span class="picker-label">Priority</span>
+                  <div class="seg" id="priority-picker" role="group">
+                    <button type="button" class="seg-btn" data-priority="low">Low</button>
+                    <button type="button" class="seg-btn active" data-priority="medium">Medium</button>
+                    <button type="button" class="seg-btn" data-priority="high">High</button>
+                  </div>
+                </div>
+                <div class="picker-group">
+                  <span class="picker-label">Tag</span>
+                  <div class="emoji-picker" id="emoji-picker">
+                    <button type="button" class="emoji-btn" data-emoji="📚" aria-label="Books">📚</button>
+                    <button type="button" class="emoji-btn" data-emoji="💼" aria-label="Work">💼</button>
+                    <button type="button" class="emoji-btn" data-emoji="⚡" aria-label="Urgent">⚡</button>
+                    <button type="button" class="emoji-btn" data-emoji="🎯" aria-label="Goal">🎯</button>
+                    <button type="button" class="emoji-btn" data-emoji="💡" aria-label="Idea">💡</button>
+                    <button type="button" class="emoji-btn" data-emoji="🔥" aria-label="Hot">🔥</button>
+                    <button type="button" class="emoji-btn" data-emoji="🏠" aria-label="Home">🏠</button>
+                    <button type="button" class="emoji-btn" data-emoji="⭐" aria-label="Star">⭐</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <p class="todo-count" id="todo-count">0 of 0 tasks completed</p>
+            <ul class="todo-list" id="todo-list"></ul>
+            <p class="todo-empty" id="todo-empty">No tasks yet — add one above to get started.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="fun-fact">
+        <div class="ff-label">Fun Fact About Me</div>
+        <p>I love traveling—I've been to more than 10 different countries and I'm always daydreaming about where to go next.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Siyu Chen · Made with warmth &amp; a lot of tea</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>
